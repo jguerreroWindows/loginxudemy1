@@ -57,9 +57,6 @@ export class Auth {
   }
 
 
-
-
-
   // cartel de errores
   handleError(error:any){
     console.error('Error en la solicitud: ', error)
