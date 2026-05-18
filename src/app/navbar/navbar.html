@@ -7,6 +7,9 @@
     </div>
 
     <div class="ml-auto">
-        <a class="nav-link text-white" (click)="logout()"></a>
+      
+       @if (authService.isAuthenticated()) {
+<button class="btn btn-outline-light btn-sm" (click)="logout()">Cerrar sesion</button>
+}
     </div>
 </nav>
